@@ -13,5 +13,5 @@ docker run \
    --privileged --restart=always \
    -e RCLONE_REMOTE=Drive:transmission \
    -v $HOME/.config/rclone:/rclone \
-   transmission-rclone
+   victor141516/transmission-rclone
 ```
