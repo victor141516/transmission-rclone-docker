@@ -7,7 +7,7 @@ RUN sed -i 's/^    "script-torrent-done-enabled": false/    "script-torrent-done
 RUN sed -i 's/^    "script-torrent-done-filename": ""/    "script-torrent-done-filename": "/on_download_finish.sh"/' /defaults/settings.json
 
 # docker run --name transclone \
-#   --privileged -it --rm \
+#   -it --rm \
 #   -p 19092:9091 \
 #   -e RCLONE_REMOTE=Drive:torrent \
 #   -v $HOME/.config/rclone:/rclone \
