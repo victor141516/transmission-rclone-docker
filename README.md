@@ -10,7 +10,7 @@ Just like [https://hub.docker.com/r/linuxserver/transmission/](https://hub.docke
 ```
 docker run \
    --name transmission-rclone \
-   --privileged --restart=always \
+   --restart=always \
    -e RCLONE_REMOTE=Drive:transmission \
    -v $HOME/.config/rclone:/rclone \
    victor141516/transmission-rclone
